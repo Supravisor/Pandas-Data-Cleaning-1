@@ -67,3 +67,9 @@ input {
   margin-left: 6px;
   margin-bottom: 6px;
 }
+
+.btn-success {
+  background: #5cb85c;
+  border-color: green;
+}
+
