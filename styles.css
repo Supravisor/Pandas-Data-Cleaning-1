@@ -16,3 +16,7 @@ table {
 #empty {
   width: 45vw;
 }
+
+#preview {
+  height: 70vh;
+}
