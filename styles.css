@@ -61,3 +61,9 @@ td {
 .btn-module {
   background: #FFE873;
 }
+
+input {
+  padding: 2px 3px;
+  margin-left: 6px;
+  margin-bottom: 6px;
+}
