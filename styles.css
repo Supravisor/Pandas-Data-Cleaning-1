@@ -12,3 +12,7 @@ h1 {
 table {
   margin: auto;
 }
+
+#empty {
+  width: 45vw;
+}
