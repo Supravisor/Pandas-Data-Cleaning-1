@@ -41,3 +41,8 @@ td {
   background: LightBlue;
   padding: 10px;  
 }
+
+#preview {
+  border-radius: 7px;
+  background: rgb(150, 150, 150);
+}
