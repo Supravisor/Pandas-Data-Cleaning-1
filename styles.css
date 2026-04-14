@@ -34,3 +34,8 @@ table {
 td {
   vertical-align: top;
 }
+
+#buttons {
+  background: LightBlue;
+  padding: 10px;  
+}
