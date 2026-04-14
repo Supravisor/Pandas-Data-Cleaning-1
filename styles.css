@@ -23,6 +23,8 @@ table {
 
 #buttons, #preview {
   width: 38vw;
+  border: 3px solid black;
+  color: black;
 }
 
 #textbox {
