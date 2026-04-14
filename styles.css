@@ -24,3 +24,9 @@ table {
 #buttons, #preview {
   width: 38vw;
 }
+
+#textbox {
+  position: fixed;
+  padding-left: 5vw;
+  background-color: transparent;
+}
