@@ -30,3 +30,7 @@ table {
   padding-left: 5vw;
   background-color: transparent;
 }
+
+td {
+  vertical-align: top;
+}
