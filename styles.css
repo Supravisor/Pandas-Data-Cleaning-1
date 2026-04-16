@@ -51,6 +51,10 @@ td {
 
 /* buttons */
 
+.btn-success {
+  color: white;
+}
+
 .btn {
   padding: 14px 12px;
   border-radius: 4px;
