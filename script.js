@@ -1,5 +1,7 @@
 
 // Missing data
+let npArray = document.getElementById("npArray");
+
 const np = (arg) => {
    document.editor.textbox.value+= "\nnp." + arg;
 }
