@@ -39,3 +39,11 @@ const isFinite = (arg) => {
      document.editor.textbox.value+="\nnp." + arg;
   }
 }
+
+const filter = () => {
+  if (variableMissing.value === "") {
+    return alert("Please enter a variable name in the 'variable' field, in the 'Missing data' section.");
+  } else {
+      document.editor.textbox.value+="\n" + variableMissing.value + "[np.isfinite(" + variableMissing.value + ")]";
+  }
+}
