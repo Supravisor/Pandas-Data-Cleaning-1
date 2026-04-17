@@ -48,3 +48,7 @@ const filter = () => {
       document.editor.textbox.value+="\n" + variableMissing.value + "[np.isfinite(" + variableMissing.value + ")]";
   }
 }
+
+// Data cleaning with Pandas
+let value = document.getElementById("value");
+
