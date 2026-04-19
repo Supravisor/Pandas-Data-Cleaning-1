@@ -69,3 +69,11 @@ const isn = (arg) => {
       document.editor.textbox.value+="\npd." + arg + "(" + value.value + ")";
   }
 }
+
+const filterCleaning = () => {
+  if (variableCleaning.value === "") {
+    return alert("Please enter a variable name in the 'variable' field, in the 'Data cleaning with Pandas' section.");
+  } else {
+      document.editor.textbox.value+="\n" + variableCleaning.value + "[" + variableCleaning.value + ".notnull()]";
+  }
+}
