@@ -51,4 +51,30 @@ const filter = () => {
 
 // Data cleaning with Pandas
 let value = document.getElementById("value");
+let dataSet = document.editor.dataSet;
+let variableCleaning = document.getElementById("variableCleaning");
 
+const isn = (arg) => {
+  if (dataSet.value !== "") {
+      let dataset = "";
+
+    if (dataSet.value === "DataFrame") {
+      dataset = "pd.DataFrame({\n    'Column a': [np.nan, np.nan, 4],\n    'Column b': [0, np.nan, 5],\n    'Column c': [1, np.nan, np.nan]\n})";
+    } else {
+      dataset = "pd.Series([np.nan, np.nan, 3])";
+    }
+      document.editor.textbox.value+="\npd." + arg + "(" + dataset + ")";
+  } else if (value.value === "") {
+    return alert("Please enter a value in the 'value' field, in the 'Data cleaning with Pandas' section.");
+  } else {
+      document.editor.textbox.value+="\npd." + arg + "(" + value.value + ")";
+  }
+}
+
+const filterCleaning = () => {
+  if (variableCleaning.value === "") {
+    return alert("Please enter a variable name in the 'variable' field, in the 'Data cleaning with Pandas' section.");
+  } else {
+      document.editor.textbox.value+="\n" + variableCleaning.value + "[" + variableCleaning.value + ".notnull()]";
+  }
+}
