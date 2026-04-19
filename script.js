@@ -51,4 +51,5 @@ const filter = () => {
 
 // Data cleaning with Pandas
 let value = document.getElementById("value");
+let dataSet = document.editor.dataSet;
 
