@@ -78,3 +78,6 @@ const filterCleaning = () => {
       document.editor.textbox.value+="\n" + variableCleaning.value + "[" + variableCleaning.value + ".notnull()]";
   }
 }
+
+// Drop null values
+let variableDropping = document.getElementById("variableDropping");
