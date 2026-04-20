@@ -82,3 +82,4 @@ const filterCleaning = () => {
 // Drop null values
 let variableDropping = document.getElementById("variableDropping");
 let dropSet = document.editor.dropSet;
+let dropNumber = document.getElementById("dropNumber");
