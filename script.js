@@ -109,3 +109,6 @@ const dropNull = () => {
       document.editor.textbox.value+="\n" + variableDropping.value + ".dropna(" + dropnumber + ")";
   }
 }
+
+Data at a glance
+let variableData = document.getElementById("variableData");
