@@ -79,6 +79,25 @@
   <input class="btn" name="variableCleaning" id="variableCleaning" placeholder="variable" type="textfield" />
 </p>
 
+<hr />
+<h2>Drop null values</h2>
+
+<p>
+  <input class="btn" name="variableDropping" id="variableDropping" placeholder="variable" type="textfield" />
+  <select name="dropSet">
+    <option value=""></option>
+    <option value="all">all</option>
+    <option value="any">any</option>
+    <option value="columns">columns</option>
+    <option value="rows">rows</option>
+  </select>
+  <input class="btn" name="dropNumber" id="dropNumber" placeholder="thresh" type="number" />
+</p>
+
+<p>
+  <input type="button" class="btn btn-primary" value="drop" onclick="dropNull();" />
+</p>
+
             </div>
           </td>
           <td id="textbox">

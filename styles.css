@@ -51,7 +51,7 @@ td {
 
 /* buttons */
 
-.btn-success {
+.btn-primary, .btn-success {
   color: white;
 }
 
@@ -80,6 +80,11 @@ input {
 .btn-success:hover {
   background: #449d44;
   border-color: #398439;
+}
+
+.btn-primary {
+  background: #5c5cb8;
+  border-color: rgb(70, 30, 255);
 }
 
 select {

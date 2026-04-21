@@ -78,3 +78,34 @@ const filterCleaning = () => {
       document.editor.textbox.value+="\n" + variableCleaning.value + "[" + variableCleaning.value + ".notnull()]";
   }
 }
+
+// Drop null values
+let variableDropping = document.getElementById("variableDropping");
+let dropSet = document.editor.dropSet;
+let dropNumber = document.getElementById("dropNumber");
+
+const dropNull = () => {
+  let dropnumber = "";
+
+  if (variableDropping.value === "") {
+    return alert("Please enter a variable name in the 'variable' field, in the 'Drop null values' section.");
+  } else if (dropSet.value !== "") {
+      let dropset = "";
+
+      if (dropSet.value === "all" || dropSet.value === "any") {
+        dropset = "how='" + dropSet.value + "'";
+      } else {
+        dropset = "axis='" + dropSet.value + "'";
+      }
+
+      if (dropNumber.value !== "") {
+        dropnumber = "thresh=" + dropNumber.value + ", ";
+      }
+      document.editor.textbox.value+="\n" + variableDropping.value + ".dropna(" + dropnumber + dropset + ")";
+  } else {
+      if (dropNumber.value !== "") {
+        dropnumber = "thresh=" + dropNumber.value;
+      }
+      document.editor.textbox.value+="\n" + variableDropping.value + ".dropna(" + dropnumber + ")";
+  }
+}
