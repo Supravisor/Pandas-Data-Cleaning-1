@@ -110,7 +110,7 @@ const dropNull = () => {
   }
 }
 
-Data at a glance
+// Data at a glance
 let variableData = document.getElementById("variableData");
 
 const data = (stat) => {
