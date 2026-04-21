@@ -51,7 +51,7 @@ td {
 
 /* buttons */
 
-.btn-success {
+.btn-primary, .btn-success {
   color: white;
 }
 
