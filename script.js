@@ -112,3 +112,11 @@ const dropNull = () => {
 
 Data at a glance
 let variableData = document.getElementById("variableData");
+
+const data = (stat) => {
+  if (variableData.value === "") {
+    return alert("Please enter a variable name in the 'variable' field, in the 'Data at a glance' section.");
+  } else {
+      document.editor.textbox.value+= '\n' + variableData.value + '.' + stat;
+  }
+}
