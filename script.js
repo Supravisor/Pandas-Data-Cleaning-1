@@ -120,3 +120,6 @@ const data = (stat) => {
       document.editor.textbox.value+= '\n' + variableData.value + '.' + stat;
   }
 }
+
+// Fill null values
+let variableFilling = document.getElementById("variableFilling");
