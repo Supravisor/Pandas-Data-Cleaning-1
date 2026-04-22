@@ -123,3 +123,38 @@ const data = (stat) => {
 
 // Fill null values
 let variableFilling = document.getElementById("variableFilling");
+let fillAxis = document.editor.fillAxis;
+
+const fillna = (arg) => {
+  if (variableFilling.value === "") {
+    return alert("Please enter a variable name in the 'variable' field, in the 'Fill null values' section.");
+  } else {
+      if (arg === "mean()") {
+        document.editor.textbox.value+="\n" + variableFilling.value + ".fillna(" + variableFilling.value + "." + arg + ")";
+      } else {
+          document.editor.textbox.value+="\n" + variableFilling.value + ".fillna(" + arg + ")" ;
+      }
+  }
+}
+
+const fillMethod = (arg) => {
+  if (variableFilling.value === "") {
+    return alert("Please enter a variable name in the 'variable' field, in the 'Fill null values' section.");
+  } else {
+      let fill = "";
+      if (fillAxis.value) {
+        fill = ", axis=" + fillAxis.value;
+      }
+
+      document.editor.textbox.value+="\n" + variableFilling.value + ".fillna(method='" + arg + "'" + fill + ")";
+  }
+}
+
+const fillDataFrame = () => {
+  if (variableFilling.value === "") {
+    return alert("Please enter a variable name in the 'variable' field, in the 'Fill null values' section.");
+  } else {
+      document.editor.textbox.value+="\n" + variableFilling.value + ".fillna({'Column A': 0, 'Column B': 99, 'Column C': " + variableFilling.value + "['Column C'].mean()})";
+  }
+}
+

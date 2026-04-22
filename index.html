@@ -119,6 +119,25 @@
   <input class="btn" name="variableFilling" id="variableFilling" placeholder="variable" type="textfield" />
 </p>
 
+<p>
+  <input type="button" class="btn btn-success" value="0" onclick="fillna(this.value);" />
+  <input type="button" class="btn btn-success" value="mean()" onclick="fillna(this.value);" />
+</p>
+
+<p>
+  <input type="button" class="btn btn-success" value="ffill" onclick="fillMethod(this.value);" />
+  <input type="button" class="btn btn-success" value="bfill" onclick="fillMethod(this.value);" />
+  <select name="fillAxis">
+    <option value=""></option>
+    <option value="0">0</option>
+    <option value="1">1</option>
+  </select>
+</p>
+
+<p>
+  <input type="button" class="btn btn-success" value="DataFrame" onclick="fillDataFrame();" />
+</p>
+
             </div>
           </td>
           <td id="textbox">
