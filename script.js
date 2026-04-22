@@ -123,6 +123,7 @@ const data = (stat) => {
 
 // Fill null values
 let variableFilling = document.getElementById("variableFilling");
+let fillAxis = document.editor.fillAxis;
 
 const fillna = (arg) => {
   if (variableFilling.value === "") {
