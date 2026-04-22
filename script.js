@@ -168,3 +168,11 @@ const missingValues = () => {
       document.editor.textbox.value+="\nmissing_values = len(" + variableCheck.value + ".dropna()) != len(" + variableCheck.value + ")";
   }
 }
+
+const missingCount = () => {
+  if (variableCheck.value === "") {
+    return alert("Please enter a variable name in the 'variable' field, in the 'Checking for missing values' section.");
+  } else {
+      document.editor.textbox.value+="\nmissing_values = len(" + variableCheck.value + ") != " + variableCheck.value + ".count()";
+  }
+}
