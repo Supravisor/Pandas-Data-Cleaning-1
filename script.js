@@ -158,3 +158,5 @@ const fillDataFrame = () => {
   }
 }
 
+// Check for missing values
+let variableCheck = document.getElementById("variableCheck");
