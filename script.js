@@ -123,3 +123,15 @@ const data = (stat) => {
 
 // Fill null values
 let variableFilling = document.getElementById("variableFilling");
+
+const fillna = (arg) => {
+  if (variableFilling.value === "") {
+    return alert("Please enter a variable name in the 'variable' field, in the 'Fill null values' section.");
+  } else {
+      if (arg === "mean()") {
+        document.editor.textbox.value+="\n" + variableFilling.value + ".fillna(" + variableFilling.value + "." + arg + ")";
+      } else {
+          document.editor.textbox.value+="\n" + variableFilling.value + ".fillna(" + arg + ")" ;
+      }
+  }
+}
