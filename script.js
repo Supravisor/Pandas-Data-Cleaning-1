@@ -149,3 +149,12 @@ const fillMethod = (arg) => {
       document.editor.textbox.value+="\n" + variableFilling.value + ".fillna(method='" + arg + "'" + fill + ")";
   }
 }
+
+const fillDataFrame = () => {
+  if (variableFilling.value === "") {
+    return alert("Please enter a variable name in the 'variable' field, in the 'Fill null values' section.");
+  } else {
+      document.editor.textbox.value+="\n" + variableFilling.value + ".fillna({'Column A': 0, 'Column B': 99, 'Column C': " + variableFilling.value + "['Column C'].mean()})";
+  }
+}
+
