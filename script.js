@@ -135,3 +135,16 @@ const fillna = (arg) => {
       }
   }
 }
+
+const fillMethod = (arg) => {
+  if (variableFilling.value === "") {
+    return alert("Please enter a variable name in the 'variable' field, in the 'Fill null values' section.");
+  } else {
+      let fill = "";
+      if (fillAxis.value) {
+        fill = ", axis=" + fillAxis.value;
+      }
+
+      document.editor.textbox.value+="\n" + variableFilling.value + ".fillna(method='" + arg + "'" + fill + ")";
+  }
+}
