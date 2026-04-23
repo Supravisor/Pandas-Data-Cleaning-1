@@ -17,7 +17,7 @@ const npis = (arg) => {
         } else {
             replacement = replacement;
       }
-      document.editor.textbox.value+= "np." + arg + "(np.array([" + replacement + "]))";
+      document.editor.textbox.value+= "\nnp." + arg + "(np.array([" + replacement + "]))";
   } else {
    document.editor.textbox.value+= "\nnp." + arg + "(np." + arg.slice(2) + ")";
   }
